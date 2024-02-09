@@ -1,7 +1,7 @@
-beautifulsoup4=4.11.1
-numpy=1.23.5
-pytorch=1.12.1
-torchvision=0.15.2
+beautifulsoup4==4.11.1
+numpy==1.23.5
+pytorch==1.12.1
+torchvision==0.15.2
 fastapi==0.104.0
 pillow==9.4.0
 uvicorn==0.23.2
