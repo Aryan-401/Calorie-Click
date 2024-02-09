@@ -6,7 +6,7 @@ This API based on FastAPI is used to serve the model. It is deployed on Heroku a
 following command from root
 
 ```bash
-uvicorn DeepLearning-API.api:app --reload
+uvicorn DeepLearningAPI.api:app --reload
 ```
 
 The API will be available at http://localhost:8000/

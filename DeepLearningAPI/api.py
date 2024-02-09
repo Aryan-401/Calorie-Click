@@ -23,7 +23,12 @@ app.add_middleware(
 
 @app.get("/")
 async def root():
-    return {"Message": "This is a test message"}
+    return {"Hi there": '''Looks like you Found the Calorie Click API. Here are the steps to use it
+    - Get the Base64 String of an Image (Try https://www.base64-image.de/)
+    - Make a POST request to /predict
+    - Get Classifying ;)
+    '''}
+
 
 @app.get("/sample_query")
 async def sample_query(message: str = "Hello World"):
@@ -32,6 +37,7 @@ async def sample_query(message: str = "Hello World"):
     localhost:8000/sample_query?message=message
     """
     return {"Message": message}
+
 
 @app.post("/predict")
 async def predict_class(base64_image: dict):
